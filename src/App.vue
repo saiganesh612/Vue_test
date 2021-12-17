@@ -1,17 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h2>Test Application</h2>
+  <div :style="buttonStyle">
+    <button class="btn btn-dark btn-sm">Login / Signup</button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  data() {
+    return {
+      buttonStyle: {
+        height: "80vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      },
+    };
+  },
+  components: {},
+};
 </script>
 
 <style>
