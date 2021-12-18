@@ -3,7 +3,13 @@
 </template>
 
 <script>
+import { handleAuth, isLoggedIn } from "../utils/auth";
+
 export default {
   name: "Details",
+  beforeMount() {
+    handleAuth();
+    if (!isLoggedIn()) this.$router.push("/");
+  },
 };
 </script>
