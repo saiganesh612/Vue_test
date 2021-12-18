@@ -81,10 +81,10 @@ export default {
         const scriptUrl =
           "https://script.google.com/macros/s/AKfycbxouWKEphWzZWD5bqgss1bZ2-W2ZsVLA29A5JmDjZL5u13x8KQPgq7Tv1RKMaI4F2Ca/exec";
 
-        const proxy = "https://cors-anywhere.herokuapp.com/";
+        // const proxy = "https://cors-anywhere.herokuapp.com/";
         axios({
           method: "post",
-          url: proxy + scriptUrl,
+          url: /*proxy*/ +scriptUrl,
           data: JSON.stringify(this.formValues),
           headers: {
             "Content-Type": "application/json",
