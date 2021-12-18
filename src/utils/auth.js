@@ -4,7 +4,7 @@ import router from "../router"
 const webAuth = new auth0.WebAuth({
     domain: 'dev-mei12s29.us.auth0.com',
     clientID: '6yREtuCzC7IYyoQklga51NYdeClTJ0R9',
-    redirectUri: 'http://localhost:8080/details',
+    redirectUri: 'https://vue-test-demo-intern.netlify.app/details',
     responseType: 'token id_token',
     scope: 'openid profile'
 })
