@@ -1,23 +1,11 @@
 <template>
   <h2>Test Application</h2>
-  <div :style="buttonStyle">
-    <button class="btn btn-dark btn-sm">Login / Signup</button>
-  </div>
+  <router-view />
 </template>
 
 <script>
 export default {
   name: "App",
-  data() {
-    return {
-      buttonStyle: {
-        height: "80vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      },
-    };
-  },
   components: {},
 };
 </script>
