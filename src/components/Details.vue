@@ -84,7 +84,7 @@ export default {
         // const proxy = "https://cors-anywhere.herokuapp.com/";
         axios({
           method: "post",
-          url: /*proxy*/ +scriptUrl,
+          url: /*proxy + */ scriptUrl,
           data: JSON.stringify(this.formValues),
           headers: {
             "Content-Type": "application/json",
